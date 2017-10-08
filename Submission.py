@@ -45,11 +45,16 @@ class Submission:
 
 
     def getExtension(self, lang):
-        if lang.find('JAVA') >= 0:
-            return '.java'
-        if lang.find('PYTH') >= 0:
-            return '.py'
-        if lang.find('C++') >= 0:
-            return '.cpp'
-        if lang.find('C') >= 0:
-            return '.c'
+    	Ext = {
+    	'JAVA': '.java',
+    	'PYTH': '.py',
+    	'python3': '.py',
+    	'python2': '.py',
+    	'C++': '.cpp',
+    	'c++': '.cpp',
+    	'cpp': '.cpp',
+    	'c': '.c',
+    	'C': '.c'
+    	}
+
+        return Ext[lang]
