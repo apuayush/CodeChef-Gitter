@@ -46,15 +46,28 @@ class Submission:
 
     def getExtension(self, lang):
     	Ext = {
-    	'JAVA': '.java',
-    	'PYTH': '.py',
+    	'java': '.java',
+    	'python': '.py'
+    	'pyth': '.py',
     	'python3': '.py',
     	'python2': '.py',
-    	'C++': '.cpp',
     	'c++': '.cpp',
     	'cpp': '.cpp',
     	'c': '.c',
-    	'C': '.c'
+    	"pascal": ".pas",
+        "ruby": ".rb",
+        "go": ".go",
+        "javascript": ".js",
+        "shell": ".sh",
+        "r":".r",
+        'c#': '.cs',
+        'php': '.php',
+        'bash': '.bash',
+        'haskell': '.hs',
+        'ruby': '.rb',
+        'perl': '.pl',
+        'scala': '.scala',
+        'text': '.txt'
     	}
 
-        return Ext[lang]
+        return Ext[lang.lower()]
